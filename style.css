@@ -14,6 +14,20 @@ body {
     display: flex;
     justify-content: center;
 }
+.Logo-1 {
+    animation: rotation 8s infinite linear;
+}
+.Logo-1:hover {
+    animation-play-state: paused;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 @media (max-width: 991px) {
@@ -118,4 +132,30 @@ body {
 
 .dota-img:hover {
     background-color: #fcb8ff;
+}
+.footer-link:nth-child(2) {
+    margin: 0 24px;
+}
+
+
+@media (max-width: 420px) {
+    .first-card-row {
+        flex-direction: column;
+    }
+    .gta-img {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .fortnite-img {
+        margin: 0;
+    }
+    .hero-title {
+        font-size: 38px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-link:nth-child(2) {
+        margin: 0;
+    }
 }
